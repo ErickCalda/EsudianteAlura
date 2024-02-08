@@ -1,0 +1,342 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+  
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+   
+    font-family: 'Inter', sans-serif;
+
+       background-color: rgb(4, 44, 77);
+   
+    height: 100%;
+    width: 100%;
+    margin: 0;
+     
+  }
+  .container{
+    width: 95% ;
+    margin: 0 auto;
+  }
+
+.cabecera{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+    background-color: rgb(4, 44, 77);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+   
+}
+
+.contenido{
+    display: flex;
+  
+   
+
+}
+.sinEncriptar{
+    width: 50%;
+    height: auto;
+  margin-right: 5rem;
+    margin-right: 2rem;
+   background-color: #ffffff;
+    
+    border-radius: 3rem;
+    font-size: 1.3rem;
+   
+
+
+
+}
+.encriptado{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+   
+  
+ 
+  
+
+}
+@media only  screen and (max-width:850px) {
+
+    .contenido{
+        display: block;
+    }
+    .encriptado{
+        width: 100%;
+    }
+        .sinEncriptar{
+            width: 100%;
+            margin: 0;
+            margin-bottom: 2rem;
+            
+
+        }
+    
+}
+
+/* //parte interna de la parte isn enccrptar */
+
+
+.texto{
+    text-align: center;
+    background-color: rgb(236, 217, 247);
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 2rem;
+   
+    border-radius: 3rem;
+
+ 
+   
+
+}
+.envia{
+   
+    width: 100%;
+    height: 87vh;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding-top: 1rem;
+   resize: none;
+
+  font-size: 2.2rem;
+  border-radius: 20px;
+
+    
+ 
+    
+    
+}
+
+.envia:focus{
+    outline:none;
+}
+.envia::placeholder{
+    color: rgb(108, 14, 197);
+}
+
+
+.texto2{
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    min-width: 90%;
+    height: 100vh;
+    position: relative;
+   
+   border-radius: 3rem;
+ 
+}
+
+@media only  screen and (max-width:850px) {
+    .texto2{
+        width: 100%;
+    }
+    
+}
+
+
+
+.resive{
+    width: 100%;
+ display: none;
+
+   
+   height: 100%;
+ 
+   border: none;
+  resize: none;
+  border-radius: 3rem;
+   margin: 0;
+   text-align: left;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   padding-top: 2rem;
+   font-size: 2.2rem;
+ pointer-events: none; 
+   
+ 
+  
+}
+.resiveOf{
+    display: block;
+}
+
+
+
+
+/*botones*/
+
+.textoaler{
+ 
+    text-align: left;
+    visibility: hidden;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.alerta{
+    margin: 0;
+   
+    font-size: 1em;
+    margin-left: 3rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: all .3s ease;
+    
+
+    
+}
+
+.divaler{
+   border: solid 0.1rem red;
+   background-color: rgb(240, 131, 131);
+   padding: 1rem 1rem;
+   visibility: visible;
+   opacity: 1;
+   
+
+}
+
+
+
+@media only  screen and (max-width:850px) {
+    .textoaler{
+       text-align: center;
+    }
+    
+}
+
+
+.botones{
+    text-align: left;
+   
+}
+.btn{       
+    padding: 1.4rem 4.5rem;
+    
+    border-radius: 1.5rem;
+   margin-left: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: solid 0.1rem  rgb(108, 14, 197) ;
+    background-color:  rgb(108, 14, 197);
+    font-weight:700;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color:  rgb(141, 59, 218);
+
+}
+.buton{
+    display: flex;
+  justify-content: space-between;
+
+    
+}
+.bonton1-2:hover{
+    background-color:  rgb(119, 9, 221);
+    color: white;
+  
+
+}
+
+.bonton1-2 {
+    background-color: transparent;
+   color: rgb(108, 14, 197);
+   margin-right: 2rem;
+    
+}
+
+.bonton1-1{
+    opacity: 50%;
+    cursor:not-allowed ;
+}
+
+
+@media only  screen and (max-width:850px) {
+.botones{
+    text-align: center;
+
+}
+.buton{
+    display: block;
+ 
+    
+}
+
+.bonton1-2{
+    margin-right: 0rem;
+    
+
+}
+
+.btn{
+    margin-left: 0rem;
+}
+
+
+ 
+    
+}
+
+.boton{
+  width: 100%;
+   position: absolute;
+   bottom: 0;
+
+  
+   
+}
+.btn1{
+   margin: 0;
+   background-color: white;
+   color:rgb(108, 14, 197) ;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+ 
+
+
+}
+
+/* imgen y texto */
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+   
+
+}
+.apagado{
+    display: none;
+}
+
+
+.img{
+  
+    width: 60%; 
+}
+
+.muneca{
+    padding-top: 5rem;
+    width: 22rem;
+}
+.mensaje{
+    font-size: 2.5rem;
+    padding: 0rem 1rem;
+
+}
